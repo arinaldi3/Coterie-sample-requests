@@ -1,0 +1,17 @@
+{
+  "underwritingInformation": {
+    "underwritingId": "566f04d8-1b8d-4772-9a3f-2477d3f2d33b",
+    "declinations": [
+      {
+        "policyType": "GL",
+        "declination": [
+          "High frequency of prior claims"
+        ]
+      }
+    ]
+  },
+  "isSuccess": false,
+  "errors": [
+    "E0000: This request can not be accommodated due to underwriting results."
+  ]
+}
