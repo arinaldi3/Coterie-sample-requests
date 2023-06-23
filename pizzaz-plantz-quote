@@ -1,0 +1,44 @@
+curl --location 'https://api-sandbox.coterieinsurance.com/v1.3/commercial/quotes' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: token bf17dc84-b73a-4f26-925d-0d12017c0490' \
+--data-raw '{
+    "agencyExternalId": "8214f304-132c-4331-bea2-169a3d1d797e",
+    "applicationTypes": [
+        "GL"
+    ],
+    "glLimit": 1000000,
+    "glAggregateLimit": 2000000,
+    "glAggregatePcoLimit": 2000000,
+    "annualPayroll": 120000,
+    "grossAnnualSales": 150000,
+    "businessName": "Pizzaz Plantz",
+    "numEmployees": 2,
+    "industryId": 12345,  // Pizzaz Plantz ID
+    "AKHash": "ec166bae97d3a4cfcccc7749a1b426cb",
+    "contactFirstName": "John",
+    "contactLastName": "Doe",
+    "contactEmail": "john.doe@pizzazplantz.com",
+    "contactPhone": "617-821-7890",
+    "mailingAddressStreet": "123 Cobblestone Dr",
+    "mailingAddressCity": "Boston",
+    "mailingAddressState": "MA",
+    "mailingAddressZip": "02108",
+    "previousLosses": [
+        {
+            "claimAmount": 50000,
+            "claimType": "Legal costs from a lawsuit",
+            "claimDate": "2022-01-01"
+        }
+    ],
+    "endorsements": {},
+    "locations": [
+        {
+            "street": "123 Cobblestone Dr",
+            "city": "Boston",
+            "state": "MA",
+            "zip": "02109",
+            "hasSprinklers": true,
+            "locationType": "BuildingOwned"
+        }
+    ]
+}'
